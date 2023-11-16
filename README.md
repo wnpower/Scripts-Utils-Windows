@@ -6,6 +6,8 @@ Colección de scripts útiles para Windows
 	Descargar y ejecutar desde Powershell
 
  - import-firewall-allow.ps1: crea reglas de Allow (entrada) en el Firewall de Windows para países y puertos específicos. Se puede usar para "cerrar" el tráfico a un país específico.
+
+ - install_ad.ps1: Instala y configura Active Directory
  
 ### Modo de uso
 Agregar país (en el ejemplo sería "ar" - Argentina -) a lista blanca de entrada (por defecto sólo lo hace en estos puertos TCP: 25,80,110,143,443,587,993,995,1433): 
