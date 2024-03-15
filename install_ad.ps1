@@ -5,7 +5,7 @@ if($NewHostname -notmatch '^([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,}$') {
 $NHArray = $NewHostname.split(".")
 $suffix = $NHArray[0]
 $domain = $NewHostname.Replace($suffix + ".", "")
-$netbiosName = $NewHostname.Replace(".", "")
+$netbiosName = $NewHostname.Replace("vps.", "").Replace("dedicado.", "").Replace(".", "").subString(0, [System.Math]::Min(15, $NewHostname.Length))
 
 echo "Se usará hostname $NewHostname"
 echo ""
